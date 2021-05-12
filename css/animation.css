@@ -20,7 +20,7 @@
     }
   }
 
-  @keyframes backGround-animation {
+  @keyframes opacity-animation {
     from {
         opacity: 0;
     }
@@ -28,3 +28,13 @@
         opacity: 1;
     }
   }
+
+  @keyframes menu-animation {
+     from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+  }
+
+

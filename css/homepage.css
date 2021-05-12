@@ -1,8 +1,3 @@
-
-/* @import url('~global.css');
-@import url('~animation.css'); */
-
-
 #logo svg {
     display: block;
     width: 100%;
@@ -35,6 +30,7 @@
     border: 0;
     background: 0 0;
     position: absolute;
+    z-index: 55;
 }
 
 #scrollme {
@@ -159,25 +155,19 @@
     transform: rotate(45deg) translate(-1px, -4px);
 }
 
-.menu-container-icon {
-    float: right;
-    cursor: pointer;
-}
-
 .menu-hunburger {
     right: -315px;
     transition: 300ms ease-in-out;
-    background-color: #fff;
-    border-inline-start-width: 1px;
-    border-inline-start-style: solid;
-    border-inline-start-color: #f4f4f4;
-    block-size: calc(100% + 20px);
+    background-color: #000;
     min-width: 312px;
     overflow-y: scroll;
-    padding: 30px 20px 20px;
+
     position: fixed;
-    top: calc(20px*-1);
-    z-index: 30;
+    z-index: 12;
+
+    transform-origin: left top;
+    display: block;
+    height: 120%;
 }
 
 .menu-hunburger-change {
@@ -186,7 +176,10 @@
 }
 
 .menu-nav {
-    margin-top: 20%;
+    position: absolute;
+    top: 80px;
+    right: 73px;
+    width: 190px;
 }
 
 .menu-nav-link {
@@ -203,18 +196,6 @@
     text-decoration-line: none;
 }
 
-.section1 {
-    visibility: inherit; 
-    opacity: 1;
-    animation: backGround-animation 3s linear ;
-    background-image:url('../assets/asset0.webp');
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position-y: 50%;
-    background-position-x: 50%;
-    height: 100vh;
-}
-
 .section1__inner {
     position: relative;
     height: 734px;
@@ -226,7 +207,7 @@
     position: absolute;
     bottom: 15%;
     left: 50px;
-    width: 40vw;
+    width: 35vw;
 }
 
 .section1__style {
@@ -243,7 +224,7 @@
 a.btn {
     position: relative;
     min-width: 130px;
-    padding: 10px 55px;
+    padding: 20px 55px;
     margin: 30px 0 0;
     border: 2px solid #fff;
     display: inline-block;
@@ -270,4 +251,100 @@ a.btn:after {
     transform: scaleY(0);
     transform-origin: bottom center;
     transition: transform 0.3s;
+}
+
+
+#menu-hunburger .navigation__nav-links a {
+    display: block;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: 'd-din-regular';
+    color: #fff;
+    border-bottom: 1pt solid #252525;
+}
+
+#menu-hunburger .navigation__nav-links li {
+    display: block;
+    margin: 0;
+    text-align: right;
+}
+
+.menu-hunburger__li__style {
+    transform: translateX(0%) translateY(-10%);
+    animation: menu-animation 5s linear ;
+}
+
+.section1 {
+    visibility: inherit; 
+    opacity: 1;
+    animation: opacity-animation 3s linear ;
+    background-image:url('../assets/asset0.webp');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height: 100vh;
+}
+
+.section2 {
+    visibility: inherit; 
+    opacity: 1;
+    animation: opacity-animation 3s linear ;
+    background-image:url('../assets/asset1.webp');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height: 100vh;
+}
+
+
+.section3 {
+    visibility: inherit; 
+    opacity: 1;
+    animation: opacity-animation 3s linear ;
+    background-image:url('../assets/asset2.webp');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height: 100vh;
+}
+
+.section4 {
+    visibility: inherit; 
+    opacity: 1;
+    animation: opacity-animation 3s linear ;
+    background-image:url('../assets/asset3.webp');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height: 100vh;
+}
+
+.section5 {
+    visibility: inherit; 
+    opacity: 1;
+    animation: opacity-animation 3s linear ;
+    background-image:url('../assets/asset4.webp');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height: 100vh;
+}
+
+.section6 {
+    visibility: inherit; 
+    opacity: 1;
+    animation: opacity-animation 3s linear ;
+    background-image:url('../assets/asset5.webp');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    height: 100vh;
 }
